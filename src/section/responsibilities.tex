@@ -1,0 +1,58 @@
+\begin{frame}
+	\frametitle{Responsibilities}
+	\begin{block}{Developers}<+->
+		\begin{itemize}[<+-| highlight@+>]
+			\item Deliver branches with only self-contained commits, which are logical units of work.
+			\item Prefer combined commits over separate commits.
+			\item During review, check commits to be self-contained and whether they are combined as much as logically possible.
+			\item During review, check commit message quality.
+		\end{itemize}
+	\end{block}
+	\begin{block}{Git master}<+->
+		\begin{itemize}[<+-| highlight@+>]
+			\item Before merging to master, check commits to be self-contained and whether they are combined as much as logically possible.
+			\item Before merging to master, check commit message quality.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Separate commits}
+	\begin{block}{Question}<+->
+		When to combine commits?
+	\end{block}
+	\begin{block}{Answer}<+->
+		When not to combine commits?
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Separate commits}
+	\begin{block}{Question}<+->
+		When not to combine commits?
+	\end{block}
+	\begin{block}{Answer}<+->
+		Having multiple commits should be the exception. It can be warranted in the following cases (non-exhaustive):
+		\begin{itemize}[<+-| highlight@+>]
+			\item Very big stories, having multiple logically separate technical features.
+			\item Stories having multiple completely independent sub-stories.
+			\item Out-of-scope code quality improvements.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Commit messages}
+	Commit messages should be...
+	\begin{itemize}[<+-| highlight@+>]
+		\item written in clear and correct English;
+		\item cover every change made in the commit;
+		\item as short as possible (while not violating the above);
+		\item 'tagged' if they contain out-of-scope changes;
+		\item conforming to all other rules set up by the team.
+	\end{itemize}
+\end{frame}
+
